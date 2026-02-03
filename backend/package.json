@@ -1,0 +1,33 @@
+{
+  "name": "certificate-backend",
+  "version": "1.0.0",
+  "description": "Certificate Generation System Backend",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.44.7",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "postgres": "^3.4.3",
+    "puppeteer": "^21.6.1",
+    "qrcode": "^1.5.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.6",
+    "nodemon": "^3.0.2"
+  }
+}
